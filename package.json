@@ -1,0 +1,28 @@
+{
+  "name": "pr-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node esbuild.config.mjs",
+    "dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@octokit/app": "^15.1.0",
+    "@octokit/rest": "^21.0.0",
+    "@octokit/webhooks": "^13.2.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.5.2",
+    "wrangler": "^3.61.0",
+    "vitest": "^1.6.0"
+  }
+}

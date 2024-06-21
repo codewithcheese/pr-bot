@@ -1,0 +1,16 @@
+name = "codewithcheese-github-app"
+main = "./dist/worker.js"
+compatibility_date = "2023-08-23"
+
+[build]
+command = "npm run build"
+
+[vars]
+APP_ID = ""
+PRIVATE_KEY = ""
+WEBHOOK_SECRET = ""
+ANTHROPIC_API_KEY = ""
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
